@@ -414,7 +414,6 @@ DEPENDENCIES
   composite_primary_keys (~> 8.0)
   dalli
   database_cleaner (~> 1.7)
-  executable-hooks (~> 1.6)
   factory_girl (~> 2.4.0)
   faraday
   faraday_middleware
