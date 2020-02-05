@@ -18,7 +18,8 @@ env:
     - CI_NODE_INDEX=1
     - CI_NODE_INDEX=2
 
-cache: bundler
+cache: 
+  bundler: false
 
 services:
   - redis-server
