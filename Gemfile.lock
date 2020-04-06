@@ -218,8 +218,13 @@ GEM
     grpc (1.26.0)
       google-protobuf (~> 3.8)
       googleapis-common-protos-types (~> 1.0)
+
+    hashdiff (1.0.0)
+    hashr (2.0.1)
+
     hashdiff (1.0.1)
     hashr (2.0.0)
+depfu/update/hashr-2.0.1
     hitimes (1.2.4)
     http (2.2.2)
       addressable (~> 2.3)
