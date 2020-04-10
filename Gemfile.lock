@@ -141,11 +141,15 @@ GEM
       amq-protocol (~> 2.3.0)
     byebug (11.1.1)
 
+    closeio (3.6.1)
+
+
     case_transform (0.2)
       activesupport
 
 depfu/update/active_model_serializers-0.10.10
     closeio (3.5.1)
+depfu/update/closeio-3.6.1
       faraday
       faraday_middleware
       json
@@ -175,7 +179,7 @@ depfu/update/active_model_serializers-0.10.10
       activesupport (>= 4.2.0)
     faraday (0.17.3)
       multipart-post (>= 1.2, < 3)
-    faraday_middleware (0.12.2)
+    faraday_middleware (0.14.0)
       faraday (>= 0.7.4, < 1.0)
     ffi (1.12.2)
     ffi-compiler (1.0.1)
@@ -269,9 +273,12 @@ depfu/update/active_model_serializers-0.10.10
     ipaddress (0.8.3)
     json (2.3.0)
 
+
+
     jsonapi-renderer (0.2.2)
 
 depfu/update/active_model_serializers-0.10.10
+depfu/update/closeio-3.6.1
     jwt (2.2.1)
     kgio (2.11.3)
     knapsack (1.18.0)
@@ -336,6 +343,8 @@ depfu/update/active_model_serializers-0.10.10
       pusher-signature (~> 0.1.8)
     pusher-signature (0.1.8)
 
+
+
     rack (1.6.13)
     rack-attack (5.4.2)
       rack (>= 1.0, < 3)
@@ -343,6 +352,7 @@ depfu/update/active_model_serializers-0.10.10
       rack (~> 1.4)
     rack-protection (1.5.5)
 
+depfu/update/closeio-3.6.1
     rack (2.0.9)
     rack-attack (5.4.2)
       rack (>= 1.0, < 3)
@@ -423,6 +433,8 @@ depfu/update/active_model_serializers-0.10.10
       simplecov-html (~> 0.11)
     simplecov-html (0.12.2)
 
+
+
     sinatra (1.4.8)
       rack (~> 1.5)
       rack-protection (~> 1.4)
@@ -439,6 +451,7 @@ depfu/update/active_model_serializers-0.10.10
     stackprof (0.2.15)
     thor (0.19.4)
 
+depfu/update/closeio-3.6.1
     sinatra (2.0.8.1)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -454,7 +467,11 @@ depfu/update/active_model_serializers-0.10.10
     stackdriver-core (1.4.0)
       google-cloud-core (~> 1.2)
     stackprof (0.2.15)
+
+    thor (0.19.4)
+
 depfu/update/active_model_serializers-0.10.10
+depfu/update/closeio-3.6.1
     thread_safe (0.3.6)
     tilt (2.0.10)
     timecop (0.9.1)
