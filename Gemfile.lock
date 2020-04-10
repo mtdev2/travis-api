@@ -141,6 +141,8 @@ GEM
       amq-protocol (~> 2.3.0)
     byebug (11.1.1)
 
+
+
     closeio (3.6.1)
 
 
@@ -148,6 +150,7 @@ GEM
       activesupport
 
 depfu/update/active_model_serializers-0.10.10
+depfu/update/factory_bot-5.1.2
     closeio (3.5.1)
 depfu/update/closeio-3.6.1
       faraday
@@ -175,7 +178,7 @@ depfu/update/closeio-3.6.1
     equalizer (0.0.11)
     erubis (2.7.0)
     excon (0.72.0)
-    factory_bot (5.1.1)
+    factory_bot (5.1.2)
       activesupport (>= 4.2.0)
     faraday (0.17.3)
       multipart-post (>= 1.2, < 3)
@@ -275,10 +278,13 @@ depfu/update/closeio-3.6.1
 
 
 
+
+
     jsonapi-renderer (0.2.2)
 
 depfu/update/active_model_serializers-0.10.10
 depfu/update/closeio-3.6.1
+depfu/update/factory_bot-5.1.2
     jwt (2.2.1)
     kgio (2.11.3)
     knapsack (1.18.0)
@@ -343,6 +349,11 @@ depfu/update/closeio-3.6.1
       pusher-signature (~> 0.1.8)
     pusher-signature (0.1.8)
 
+    rack (2.0.9)
+    rack-attack (5.4.2)
+      rack (>= 1.0, < 3)
+
+
 
 
     rack (1.6.13)
@@ -356,6 +367,7 @@ depfu/update/closeio-3.6.1
     rack (2.0.9)
     rack-attack (5.4.2)
       rack (>= 1.0, < 3)
+depfu/update/factory_bot-5.1.2
     rack-contrib (2.2.0)
       rack (~> 2.0)
     rack-protection (2.0.8.1)
@@ -435,6 +447,8 @@ depfu/update/active_model_serializers-0.10.10
 
 
 
+
+
     sinatra (1.4.8)
       rack (~> 1.5)
       rack-protection (~> 1.4)
@@ -452,6 +466,7 @@ depfu/update/active_model_serializers-0.10.10
     thor (0.19.4)
 
 depfu/update/closeio-3.6.1
+depfu/update/factory_bot-5.1.2
     sinatra (2.0.8.1)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -470,8 +485,12 @@ depfu/update/closeio-3.6.1
 
     thor (0.19.4)
 
+
+    thor (0.19.4)
+
 depfu/update/active_model_serializers-0.10.10
 depfu/update/closeio-3.6.1
+depfu/update/factory_bot-5.1.2
     thread_safe (0.3.6)
     tilt (2.0.10)
     timecop (0.9.1)
