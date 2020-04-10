@@ -93,8 +93,24 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    active_model_serializers (0.9.5)
-      activemodel (>= 3.2)
+    actionpack (4.2.11.1)
+      actionview (= 4.2.11.1)
+      activesupport (= 4.2.11.1)
+      rack (~> 1.6)
+      rack-test (~> 0.6.2)
+      rails-dom-testing (~> 1.0, >= 1.0.5)
+      rails-html-sanitizer (~> 1.0, >= 1.0.2)
+    actionview (4.2.11.1)
+      activesupport (= 4.2.11.1)
+      builder (~> 3.1)
+      erubis (~> 2.7.0)
+      rails-dom-testing (~> 1.0, >= 1.0.5)
+      rails-html-sanitizer (~> 1.0, >= 1.0.3)
+    active_model_serializers (0.10.10)
+      actionpack (>= 4.1, < 6.1)
+      activemodel (>= 4.1, < 6.1)
+      case_transform (>= 0.2)
+      jsonapi-renderer (>= 0.1.1.beta1, < 0.3)
     activemodel (4.2.11.1)
       activesupport (= 4.2.11.1)
       builder (~> 3.1)
@@ -124,6 +140,11 @@ GEM
     bunny (2.9.2)
       amq-protocol (~> 2.3.0)
     byebug (11.1.1)
+
+    case_transform (0.2)
+      activesupport
+
+depfu/update/active_model_serializers-0.10.10
     closeio (3.5.1)
       faraday
       faraday_middleware
@@ -138,6 +159,7 @@ GEM
     connection_pool (2.2.2)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
+    crass (1.0.6)
     dalli (2.7.10)
     database_cleaner (1.8.4)
     descendants_tracker (0.0.4)
@@ -147,6 +169,7 @@ GEM
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.11)
+    erubis (2.7.0)
     excon (0.72.0)
     factory_bot (5.1.1)
       activesupport (>= 4.2.0)
@@ -245,6 +268,10 @@ GEM
     ice_nine (0.11.2)
     ipaddress (0.8.3)
     json (2.3.0)
+
+    jsonapi-renderer (0.2.2)
+
+depfu/update/active_model_serializers-0.10.10
     jwt (2.2.1)
     kgio (2.11.3)
     knapsack (1.18.0)
@@ -259,6 +286,9 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
+    loofah (2.5.0)
+      crass (~> 1.0.2)
+      nokogiri (>= 1.5.9)
     memcachier (0.0.2)
     memoist (0.16.2)
     memory_profiler (0.9.14)
@@ -305,15 +335,34 @@ GEM
       multi_json (~> 1.0)
       pusher-signature (~> 0.1.8)
     pusher-signature (0.1.8)
+
+    rack (1.6.13)
+    rack-attack (5.4.2)
+      rack (>= 1.0, < 3)
+    rack-contrib (1.8.0)
+      rack (~> 1.4)
+    rack-protection (1.5.5)
+
     rack (2.0.9)
     rack-attack (5.4.2)
       rack (>= 1.0, < 3)
     rack-contrib (2.2.0)
       rack (~> 2.0)
     rack-protection (2.0.8.1)
+depfu/update/active_model_serializers-0.10.10
       rack
     rack-ssl (1.4.1)
       rack
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    rails-deprecated_sanitizer (1.0.3)
+      activesupport (>= 4.2.0.alpha)
+    rails-dom-testing (1.0.9)
+      activesupport (>= 4.2.0, < 5.0)
+      nokogiri (~> 1.6)
+      rails-deprecated_sanitizer (>= 1.0.1)
+    rails-html-sanitizer (1.3.0)
+      loofah (~> 2.3)
     raindrops (0.19.1)
     rake (12.3.3)
     rb-fsevent (0.9.8)
@@ -373,6 +422,23 @@ GEM
       docile (~> 1.1)
       simplecov-html (~> 0.11)
     simplecov-html (0.12.2)
+
+    sinatra (1.4.8)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    sinatra-contrib (1.4.7)
+      backports (>= 2.0)
+      multi_json
+      rack-protection
+      rack-test
+      sinatra (~> 1.4.0)
+      tilt (>= 1.3, < 3)
+    stackdriver-core (1.4.0)
+      google-cloud-core (~> 1.2)
+    stackprof (0.2.15)
+    thor (0.19.4)
+
     sinatra (2.0.8.1)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -388,6 +454,7 @@ GEM
     stackdriver-core (1.4.0)
       google-cloud-core (~> 1.2)
     stackprof (0.2.15)
+depfu/update/active_model_serializers-0.10.10
     thread_safe (0.3.6)
     tilt (2.0.10)
     timecop (0.9.1)
