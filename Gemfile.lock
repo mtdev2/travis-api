@@ -93,15 +93,15 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actionpack (4.2.11.1)
-      actionview (= 4.2.11.1)
-      activesupport (= 4.2.11.1)
+    actionpack (4.2.11.3)
+      actionview (= 4.2.11.3)
+      activesupport (= 4.2.11.3)
       rack (~> 1.6)
       rack-test (~> 0.6.2)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionview (4.2.11.1)
-      activesupport (= 4.2.11.1)
+    actionview (4.2.11.3)
+      activesupport (= 4.2.11.3)
       builder (~> 3.1)
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
@@ -111,14 +111,14 @@ GEM
       activemodel (>= 4.1, < 6.1)
       case_transform (>= 0.2)
       jsonapi-renderer (>= 0.1.1.beta1, < 0.3)
-    activemodel (4.2.11.1)
-      activesupport (= 4.2.11.1)
+    activemodel (4.2.11.3)
+      activesupport (= 4.2.11.3)
       builder (~> 3.1)
-    activerecord (4.2.11.1)
-      activemodel (= 4.2.11.1)
-      activesupport (= 4.2.11.1)
+    activerecord (4.2.11.3)
+      activemodel (= 4.2.11.3)
+      activesupport (= 4.2.11.3)
       arel (~> 6.0)
-    activesupport (4.2.11.1)
+    activesupport (4.2.11.3)
       i18n (~> 0.7)
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
@@ -139,23 +139,10 @@ GEM
     builder (3.2.4)
     bunny (2.9.2)
       amq-protocol (~> 2.3.0)
-    byebug (11.1.1)
-
-
-
-    closeio (3.6.1)
-
-
+    byebug (11.1.3)
     case_transform (0.2)
       activesupport
-
-depfu/update/active_model_serializers-0.10.10
-depfu/update/factory_bot-5.1.2
-    closeio (3.5.1)
-depfu/update/closeio-3.6.1
-      faraday
-      faraday_middleware
-      json
+    closeio (3.6.1)
     coder (0.4.0)
     coderay (1.1.2)
     coercible (1.0.0)
@@ -168,7 +155,7 @@ depfu/update/closeio-3.6.1
       safe_yaml (~> 1.0.0)
     crass (1.0.6)
     dalli (2.7.10)
-    database_cleaner (1.8.4)
+    database_cleaner (1.8.5)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     diff-lcs (1.3)
@@ -177,8 +164,8 @@ depfu/update/closeio-3.6.1
       unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.11)
     erubis (2.7.0)
-    excon (0.72.0)
-    factory_bot (5.1.2)
+    excon (0.73.0)
+    factory_bot (5.2.0)
       activesupport (>= 4.2.0)
     faraday (0.17.3)
       multipart-post (>= 1.2, < 3)
@@ -201,8 +188,8 @@ depfu/update/closeio-3.6.1
       fog-core
       fog-json
       fog-xml
-    fog-json (1.0.2)
-      fog-core (~> 1.0)
+    fog-json (1.2.0)
+      fog-core
       multi_json (~> 1.10)
     fog-xml (0.1.3)
       fog-core
@@ -224,34 +211,37 @@ depfu/update/closeio-3.6.1
     google-cloud-env (1.3.1)
       faraday (>= 0.17.3, < 2.0)
     google-cloud-errors (1.0.0)
-    google-cloud-monitoring (0.32.0)
-      google-gax (~> 1.7)
-      googleapis-common-protos-types (>= 1.0.2)
-    google-cloud-trace (0.35.0)
+    google-cloud-monitoring (0.38.0)
+      google-gax (~> 1.8)
+      googleapis-common-protos (>= 1.3.9, < 2.0)
+      googleapis-common-protos-types (>= 1.0.4, < 2.0)
+    google-cloud-trace (0.38.1)
       concurrent-ruby (~> 1.1)
       google-cloud-core (~> 1.2)
-      google-gax (~> 1.7)
+      google-gax (~> 1.8)
+      googleapis-common-protos (>= 1.3.9, < 2.0)
+      googleapis-common-protos-types (>= 1.0.4, < 2.0)
       stackdriver-core (~> 1.3)
-    google-gax (1.7.1)
-      google-protobuf (~> 3.2)
-      googleapis-common-protos (>= 1.3.5, < 2.0)
-      googleauth (>= 0.6.2, < 0.10.0)
-      grpc (>= 1.7.2, < 2.0)
+    google-gax (1.8.1)
+      google-protobuf (~> 3.9)
+      googleapis-common-protos (>= 1.3.9, < 2.0)
+      googleauth (~> 0.9)
+      grpc (~> 1.24)
       rly (~> 0.2.3)
-    google-protobuf (3.11.4)
-    googleapis-common-protos (1.3.9)
-      google-protobuf (~> 3.0)
-      googleapis-common-protos-types (~> 1.0)
-      grpc (~> 1.0)
-    googleapis-common-protos-types (1.0.4)
-      google-protobuf (~> 3.0)
-    googleauth (0.6.6)
-      faraday (~> 0.12)
+    google-protobuf (3.12.0)
+    googleapis-common-protos (1.3.10)
+      google-protobuf (~> 3.11)
+      googleapis-common-protos-types (>= 1.0.5, < 2.0)
+      grpc (~> 1.27)
+    googleapis-common-protos-types (1.0.5)
+      google-protobuf (~> 3.11)
+    googleauth (0.12.0)
+      faraday (>= 0.17.3, < 2.0)
       jwt (>= 1.4, < 3.0)
-      memoist (~> 0.12)
+      memoist (~> 0.16)
       multi_json (~> 1.11)
       os (>= 0.9, < 2.0)
-      signet (~> 0.7)
+      signet (~> 0.14)
     grpc (1.28.0)
       google-protobuf (~> 3.11)
       googleapis-common-protos-types (~> 1.0)
@@ -274,17 +264,7 @@ depfu/update/closeio-3.6.1
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
     ipaddress (0.8.3)
-    json (2.3.0)
-
-
-
-
-
     jsonapi-renderer (0.2.2)
-
-depfu/update/active_model_serializers-0.10.10
-depfu/update/closeio-3.6.1
-depfu/update/factory_bot-5.1.2
     jwt (2.2.1)
     kgio (2.11.3)
     knapsack (1.18.0)
@@ -312,9 +292,9 @@ depfu/update/factory_bot-5.1.2
       hitimes (~> 1.1)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2019.1009)
+    mime-types-data (3.2020.0512)
     mini_portile2 (2.4.0)
-    minitest (5.14.0)
+    minitest (5.14.1)
     mocha (1.11.2)
     msgpack (1.3.3)
     multi_json (1.14.1)
@@ -332,46 +312,28 @@ depfu/update/factory_bot-5.1.2
       google-cloud-monitoring (~> 0.32)
       google-cloud-trace (~> 0.35)
       opencensus (~> 0.5)
-    optimist (3.0.0)
+    optimist (3.0.1)
     os (1.1.0)
     pg (0.21.0)
     proxies (0.2.3)
-    pry (0.13.0)
+    pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
     pry-byebug (3.9.0)
       byebug (~> 11.0)
       pry (~> 0.13.0)
-    public_suffix (4.0.4)
+    public_suffix (4.0.5)
     pusher (0.14.6)
       httpclient (~> 2.5)
       multi_json (~> 1.0)
       pusher-signature (~> 0.1.8)
     pusher-signature (0.1.8)
-
-    rack (2.0.9)
-    rack-attack (5.4.2)
-      rack (>= 1.0, < 3)
-
-
-
-
     rack (1.6.13)
     rack-attack (5.4.2)
       rack (>= 1.0, < 3)
     rack-contrib (1.8.0)
       rack (~> 1.4)
     rack-protection (1.5.5)
-
-depfu/update/closeio-3.6.1
-    rack (2.0.9)
-    rack-attack (5.4.2)
-      rack (>= 1.0, < 3)
-depfu/update/factory_bot-5.1.2
-    rack-contrib (2.2.0)
-      rack (~> 2.0)
-    rack-protection (2.0.8.1)
-depfu/update/active_model_serializers-0.10.10
       rack
     rack-ssl (1.4.1)
       rack
@@ -411,9 +373,9 @@ depfu/update/active_model_serializers-0.10.10
       rspec-core (~> 3.9.0)
       rspec-expectations (~> 3.9.0)
       rspec-mocks (~> 3.9.0)
-    rspec-core (3.9.1)
-      rspec-support (~> 3.9.1)
-    rspec-expectations (3.9.1)
+    rspec-core (3.9.2)
+      rspec-support (~> 3.9.3)
+    rspec-expectations (3.9.2)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-its (1.3.0)
@@ -422,7 +384,7 @@ depfu/update/active_model_serializers-0.10.10
     rspec-mocks (3.9.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
-    rspec-support (3.9.2)
+    rspec-support (3.9.3)
     ruby2_keywords (0.0.2)
     ruby_dep (1.5.0)
     safe_yaml (1.0.5)
@@ -444,11 +406,6 @@ depfu/update/active_model_serializers-0.10.10
       docile (~> 1.1)
       simplecov-html (~> 0.11)
     simplecov-html (0.12.2)
-
-
-
-
-
     sinatra (1.4.8)
       rack (~> 1.5)
       rack-protection (~> 1.4)
@@ -463,34 +420,6 @@ depfu/update/active_model_serializers-0.10.10
     stackdriver-core (1.4.0)
       google-cloud-core (~> 1.2)
     stackprof (0.2.15)
-    thor (0.19.4)
-
-depfu/update/closeio-3.6.1
-depfu/update/factory_bot-5.1.2
-    sinatra (2.0.8.1)
-      mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.8.1)
-      tilt (~> 2.0)
-    sinatra-contrib (2.0.8.1)
-      backports (>= 2.8.2)
-      multi_json
-      mustermann (~> 1.0)
-      rack-protection (= 2.0.8.1)
-      sinatra (= 2.0.8.1)
-      tilt (~> 2.0)
-    stackdriver-core (1.4.0)
-      google-cloud-core (~> 1.2)
-    stackprof (0.2.15)
-
-    thor (0.19.4)
-
-
-    thor (0.19.4)
-
-depfu/update/active_model_serializers-0.10.10
-depfu/update/closeio-3.6.1
-depfu/update/factory_bot-5.1.2
     thread_safe (0.3.6)
     tilt (2.0.10)
     timecop (0.9.1)
@@ -502,7 +431,7 @@ depfu/update/factory_bot-5.1.2
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.7)
-    unicorn (5.5.4)
+    unicorn (5.5.5)
       kgio (~> 2.6)
       raindrops (~> 0.7)
     useragent (0.16.10)
@@ -515,7 +444,7 @@ depfu/update/factory_bot-5.1.2
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
-    yard (0.9.24)
+    yard (0.9.25)
 
 PLATFORMS
   ruby
