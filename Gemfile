@@ -20,7 +20,7 @@ gem 'sinatra-contrib', require: nil #git: 'https://github.com/sinatra/sinatra-co
 
 gem 'simple_states',   '1.0.2'
 
-gem 'active_model_serializers'
+gem 'active_model_serializers', '>= 0.10.10'
 gem 'unicorn'
 gem 'sentry-raven'
 gem 'yard-sinatra',    git: 'https://github.com/rkh/yard-sinatra'
@@ -95,4 +95,3 @@ group :development do
   gem 'rerun'
   gem 'rb-fsevent', '~> 0.9.1'
 end
-
