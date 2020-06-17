@@ -14,9 +14,9 @@ GIT
 
 GIT
   remote: https://github.com/rtomayko/rack-cache
-  revision: d87001ed884060068d18251cbd84209243b99635
+  revision: 97819fb7cac8e80b5f2357400852cef49f088468
   specs:
-    rack-cache (1.11.0)
+    rack-cache (1.12.0)
       rack (>= 0.4)
 
 GIT
@@ -93,49 +93,48 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    actionpack (4.2.11.3)
-      actionview (= 4.2.11.3)
-      activesupport (= 4.2.11.3)
-      rack (~> 1.6)
-      rack-test (~> 0.6.2)
-      rails-dom-testing (~> 1.0, >= 1.0.5)
+    actionpack (5.2.4.3)
+      actionview (= 5.2.4.3)
+      activesupport (= 5.2.4.3)
+      rack (~> 2.0, >= 2.0.8)
+      rack-test (>= 0.6.3)
+      rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionview (4.2.11.3)
-      activesupport (= 4.2.11.3)
+    actionview (5.2.4.3)
+      activesupport (= 5.2.4.3)
       builder (~> 3.1)
-      erubis (~> 2.7.0)
-      rails-dom-testing (~> 1.0, >= 1.0.5)
+      erubi (~> 1.4)
+      rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
     active_model_serializers (0.10.10)
       actionpack (>= 4.1, < 6.1)
       activemodel (>= 4.1, < 6.1)
       case_transform (>= 0.2)
       jsonapi-renderer (>= 0.1.1.beta1, < 0.3)
-    activemodel (4.2.11.3)
-      activesupport (= 4.2.11.3)
-      builder (~> 3.1)
-    activerecord (4.2.11.3)
-      activemodel (= 4.2.11.3)
-      activesupport (= 4.2.11.3)
-      arel (~> 6.0)
-    activesupport (4.2.11.3)
-      i18n (~> 0.7)
+    activemodel (5.2.4.3)
+      activesupport (= 5.2.4.3)
+    activerecord (5.2.4.3)
+      activemodel (= 5.2.4.3)
+      activesupport (= 5.2.4.3)
+      arel (>= 9.0)
+    activesupport (5.2.4.3)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
       minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     aggregate (0.2.2)
     allocation_tracer (0.6.3)
     amq-protocol (2.3.0)
-    arel (6.0.4)
+    arel (9.0.0)
     atomic (1.1.101)
     avl_tree (1.1.3)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
-    backports (3.17.0)
+    backports (3.17.2)
     builder (3.2.4)
     bunny (2.9.2)
       amq-protocol (~> 2.3.0)
@@ -147,10 +146,10 @@ GEM
     coderay (1.1.2)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
-    composite_primary_keys (8.1.8)
-      activerecord (~> 4.2.0)
+    composite_primary_keys (11.3.1)
+      activerecord (~> 5.2.4)
     concurrent-ruby (1.1.6)
-    connection_pool (2.2.2)
+    connection_pool (2.2.3)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     crass (1.0.6)
@@ -163,7 +162,7 @@ GEM
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     equalizer (0.0.11)
-    erubis (2.7.0)
+    erubi (1.9.0)
     excon (0.73.0)
     factory_bot (5.2.0)
       activesupport (>= 4.2.0)
@@ -260,7 +259,7 @@ GEM
       ffi-compiler (>= 1.0, < 2.0)
     httpclient (2.8.3)
     hurley (0.2)
-    i18n (0.9.5)
+    i18n (1.8.3)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
     ipaddress (0.8.3)
@@ -279,7 +278,7 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
-    loofah (2.5.0)
+    loofah (2.6.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     memcachier (0.0.2)
@@ -328,23 +327,20 @@ GEM
       multi_json (~> 1.0)
       pusher-signature (~> 0.1.8)
     pusher-signature (0.1.8)
-    rack (1.6.13)
+    rack (2.2.3)
     rack-attack (5.4.2)
       rack (>= 1.0, < 3)
-    rack-contrib (1.8.0)
-      rack (~> 1.4)
-    rack-protection (1.5.5)
+    rack-contrib (2.2.0)
+      rack (~> 2.0)
+    rack-protection (2.0.8.1)
       rack
     rack-ssl (1.4.1)
       rack
-    rack-test (0.6.3)
-      rack (>= 1.0)
-    rails-deprecated_sanitizer (1.0.3)
-      activesupport (>= 4.2.0.alpha)
-    rails-dom-testing (1.0.9)
-      activesupport (>= 4.2.0, < 5.0)
-      nokogiri (~> 1.6)
-      rails-deprecated_sanitizer (>= 1.0.1)
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
+    rails-dom-testing (2.0.3)
+      activesupport (>= 4.2.0)
+      nokogiri (>= 1.6)
     rails-html-sanitizer (1.3.0)
       loofah (~> 2.3)
     raindrops (0.19.1)
@@ -390,11 +386,11 @@ GEM
     safe_yaml (1.0.5)
     sentry-raven (2.13.0)
       faraday (>= 0.7.6, < 1.0)
-    sidekiq (5.2.8)
+    sidekiq (5.2.9)
       connection_pool (~> 2.2, >= 2.2.2)
-      rack (< 2.1.0)
+      rack (~> 2.0)
       rack-protection (>= 1.5.0)
-      redis (>= 3.3.5, < 5)
+      redis (>= 3.3.5, < 4.2)
     signet (0.14.0)
       addressable (~> 2.3)
       faraday (>= 0.17.3, < 2.0)
@@ -406,17 +402,18 @@ GEM
       docile (~> 1.1)
       simplecov-html (~> 0.11)
     simplecov-html (0.12.2)
-    sinatra (1.4.8)
-      rack (~> 1.5)
-      rack-protection (~> 1.4)
-      tilt (>= 1.3, < 3)
-    sinatra-contrib (1.4.7)
-      backports (>= 2.0)
+    sinatra (2.0.8.1)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.8.1)
+      tilt (~> 2.0)
+    sinatra-contrib (2.0.8.1)
+      backports (>= 2.8.2)
       multi_json
-      rack-protection
-      rack-test
-      sinatra (~> 1.4.0)
-      tilt (>= 1.3, < 3)
+      mustermann (~> 1.0)
+      rack-protection (= 2.0.8.1)
+      sinatra (= 2.0.8.1)
+      tilt (~> 2.0)
     stackdriver-core (1.4.0)
       google-cloud-core (~> 1.2)
     stackprof (0.2.15)
@@ -451,15 +448,15 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers (>= 0.10.10)
-  activerecord (~> 4.2)
+  activerecord (~> 5.2, >= 5.2.4.3)
   allocation_tracer
   bunny (~> 2.9.2)
   closeio (~> 3.5)
   coder (~> 0.4.0)
-  composite_primary_keys (~> 8.0)
+  composite_primary_keys (~> 11.0, >= 11.0.0)
   dalli
   database_cleaner
-  factory_bot
+  factory_bot (>= 5.2.0)
   faraday
   faraday_middleware
   fog-aws (~> 0.12.0)
@@ -489,10 +486,10 @@ DEPENDENCIES
   pry
   pry-byebug
   pusher (~> 0.14.0)
-  rack-attack (~> 5.0)
+  rack-attack (~> 5.4, >= 5.4.2)
   rack-cache!
-  rack-contrib
-  rack-ssl (~> 1.3, >= 1.3.3)
+  rack-contrib (>= 2.0.0)
+  rack-ssl (~> 1.4, >= 1.4.1)
   rake (~> 12.3.3)
   rb-fsevent (~> 0.9.1)
   rbtrace
@@ -506,11 +503,11 @@ DEPENDENCIES
   rspec-its
   s3!
   sentry-raven
-  sidekiq
+  sidekiq (>= 5.2.9)
   simple_states (= 1.0.2)
   simplecov
-  sinatra
-  sinatra-contrib
+  sinatra (>= 2.0.0)
+  sinatra-contrib (>= 2.0.0)
   stackprof
   timecop
   tool
