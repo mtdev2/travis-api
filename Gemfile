@@ -60,7 +60,7 @@ gem 'knapsack'
 
 gem 'pg',                     '~> 0.21'
 gem 'composite_primary_keys', '~> 11.0', '>= 11.0.0'
-gem 'redcarpet',              '>= 3.2.3'
+gem 'redcarpet', '>= 3.5.1'
 gem 'rack-ssl', '~> 1.4', '>= 1.4.1'
 gem 'memcachier'
 gem 'useragent'
