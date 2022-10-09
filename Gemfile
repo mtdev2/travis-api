@@ -15,8 +15,8 @@ gem 'travis-github_apps', git: 'https://github.com/travis-ci/travis-github_apps'
 gem 'travis-rollout',  '~> 0.0.2'
 
 gem 'mustermann'
-gem 'sinatra', '>= 2.0.2'
-gem 'sinatra-contrib', '>= 2.0.2', require: nil #git: 'https://github.com/sinatra/sinatra-contrib', require: nil
+gem 'sinatra', '>= 2.2.0'
+gem 'sinatra-contrib', '>= 2.2.0', require: nil #git: 'https://github.com/sinatra/sinatra-contrib', require: nil
 
 gem 'simple_states', '1.0.2'
 
@@ -38,7 +38,7 @@ gem 'simplecov'
 gem 'stackprof'
 gem "ipaddress", "~> 0.8.3"
 gem 'nakayoshi_fork'
-gem 'sidekiq', '>= 6.0.0'
+gem 'sidekiq', '>= 6.2.1'
 gem 'redis-namespace'
 gem 'marginalia', git: 'https://github.com/travis-ci/marginalia'
 
@@ -60,15 +60,15 @@ gem 'knapsack'
 
 gem 'pg',                     '~> 0.21'
 gem 'composite_primary_keys', '~> 11.0', '>= 11.0.0'
-gem 'redcarpet',              '>= 3.2.3'
+gem 'redcarpet', '>= 3.5.1'
 gem 'rack-ssl', '~> 1.4', '>= 1.4.1'
 gem 'memcachier'
 gem 'useragent'
 gem 'tool'
-gem 'google-api-client', '~> 0.9.4'
-gem 'fog-aws',           '~> 0.12.0'
-gem 'fog-google',        '~> 0.4.2'
-gem 'activerecord', '~> 5.2', '>= 5.2.4.3'
+gem 'google-api-client', '~> 0.9.28'
+gem 'fog-aws', '~> 0.12.0'
+gem 'fog-google', '~> 0.4.2'
+gem 'activerecord', '~> 5.2', '>= 5.2.8.1'
 gem 'rollout',           '~> 1.1.0'
 gem 'coder',             '~> 0.4.0'
 gem 'virtus',            '~> 1.0.0'
