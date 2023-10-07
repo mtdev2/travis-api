@@ -16,11 +16,11 @@ gem 'travis-rollout',  '~> 0.0.2'
 
 gem 'mustermann'
 gem 'sinatra', '>= 2.0.2'
-gem 'sinatra-contrib', '>= 2.0.2', require: nil #git: 'https://github.com/sinatra/sinatra-contrib', require: nil
+gem 'sinatra-contrib', '>= 2.0.0', require: nil #git: 'https://github.com/sinatra/sinatra-contrib', require: nil
 
 gem 'simple_states', '1.0.2'
 
-gem 'active_model_serializers', '>= 0.10.10'
+gem 'active_model_serializers', '>= 0.10.14'
 gem 'unicorn'
 gem 'sentry-raven'
 gem 'yard-sinatra',    git: 'https://github.com/rkh/yard-sinatra'
@@ -59,7 +59,7 @@ gem 'faraday_middleware'
 gem 'knapsack'
 
 gem 'pg',                     '~> 0.21'
-gem 'composite_primary_keys', '~> 11.0', '>= 11.0.0'
+gem 'composite_primary_keys', '~> 9.0', '>= 9.0.0'
 gem 'redcarpet',              '>= 3.2.3'
 gem 'rack-ssl', '~> 1.4', '>= 1.4.1'
 gem 'memcachier'
@@ -68,7 +68,7 @@ gem 'tool'
 gem 'google-api-client', '~> 0.9.4'
 gem 'fog-aws',           '~> 0.12.0'
 gem 'fog-google',        '~> 0.4.2'
-gem 'activerecord', '~> 5.2', '>= 5.2.4.3'
+gem 'activerecord', '~> 5.0', '>= 5.0.0'
 gem 'rollout',           '~> 1.1.0'
 gem 'coder',             '~> 0.4.0'
 gem 'virtus',            '~> 1.0.0'
