@@ -81,7 +81,7 @@ gem 'closeio',           '~> 3.5'
 group :test do
   gem 'rspec'
   gem 'rspec-its'
-  gem 'factory_bot', '>= 5.2.0'
+  gem 'factory_bot', '>= 6.5.1'
   gem 'mocha'
   gem 'database_cleaner'
   gem 'timecop'
