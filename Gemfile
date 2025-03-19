@@ -16,7 +16,7 @@ gem 'travis-rollout',  '~> 0.0.2'
 
 gem 'mustermann'
 gem 'sinatra', '>= 2.0.2'
-gem 'sinatra-contrib', '>= 2.0.2', require: nil #git: 'https://github.com/sinatra/sinatra-contrib', require: nil
+gem 'sinatra-contrib', '>= 2.0.0', require: nil #git: 'https://github.com/sinatra/sinatra-contrib', require: nil
 
 gem 'simple_states', '1.0.2'
 
@@ -38,7 +38,7 @@ gem 'simplecov'
 gem 'stackprof'
 gem "ipaddress", "~> 0.8.3"
 gem 'nakayoshi_fork'
-gem 'sidekiq', '>= 6.0.0'
+gem 'sidekiq', '>= 6.1.0'
 gem 'redis-namespace'
 gem 'marginalia', git: 'https://github.com/travis-ci/marginalia'
 
@@ -51,7 +51,7 @@ gem 'rake', '~> 12.3.3'
 
 gem 'libhoney'
 gem 'opencensus'
-gem 'opencensus-stackdriver'
+gem 'opencensus-stackdriver', '>= 0.4.0'
 
 gem 'faraday'
 gem 'faraday_middleware'
