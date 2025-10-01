@@ -15,18 +15,18 @@ gem 'travis-github_apps', git: 'https://github.com/travis-ci/travis-github_apps'
 gem 'travis-rollout',  '~> 0.0.2'
 
 gem 'mustermann'
-gem 'sinatra', '>= 2.0.2'
-gem 'sinatra-contrib', '>= 2.0.2', require: nil #git: 'https://github.com/sinatra/sinatra-contrib', require: nil
+gem 'sinatra', '>= 2.0.0'
+gem 'sinatra-contrib', '>= 2.0.0', require: nil #git: 'https://github.com/sinatra/sinatra-contrib', require: nil
 
 gem 'simple_states', '1.0.2'
 
-gem 'active_model_serializers', '>= 0.10.10'
+gem 'active_model_serializers', '>= 0.10.11'
 gem 'unicorn'
 gem 'sentry-raven'
 gem 'yard-sinatra',    git: 'https://github.com/rkh/yard-sinatra'
 gem 'rack-contrib', '>= 2.0.0'
 gem 'rack-cache',      git: 'https://github.com/rtomayko/rack-cache'
-gem 'rack-attack', '~> 5.4', '>= 5.4.2'
+gem 'rack-attack', '~> 6.0', '>= 6.0.0'
 gem 'gh', git: 'https://github.com/travis-ci/gh'
 gem 'bunny',           '~> 2.9.2'
 gem 'dalli'
@@ -38,7 +38,7 @@ gem 'simplecov'
 gem 'stackprof'
 gem "ipaddress", "~> 0.8.3"
 gem 'nakayoshi_fork'
-gem 'sidekiq', '>= 6.0.0'
+gem 'sidekiq', '>= 5.2.9'
 gem 'redis-namespace'
 gem 'marginalia', git: 'https://github.com/travis-ci/marginalia'
 
